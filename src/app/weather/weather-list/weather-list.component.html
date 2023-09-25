@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li class="list-group-item p-2" *ngFor="let report of weatherReports">
+    <p>{{ report.temp }} &#8451;</p>
+    <p class="fw-bold">{{ report.date | date : "E" }}</p>
+  </li>
+</ul>
